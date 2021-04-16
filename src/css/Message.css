@@ -1,0 +1,43 @@
+.Message{
+	margin: 10px 5px;
+	display: flex;
+    flex-direction: column;
+}
+
+.Message.me{
+	align-items: flex-end!important;
+}
+
+.Message .by_Box{
+	color: var(--Csecondary);
+	font-size: .8rem;
+	margin-left: 0.8rem;
+	margin-bottom: 3px;
+}
+
+.Message.me .by_Box{
+	margin-left: 0;
+	margin-right: 0.8rem;
+}
+
+.Message .message_Box{
+	color: var(--Cprimary)!important;
+	background-color: var(--Cbackground);
+	padding: 10px;
+	border-radius: 10px;
+	width: fit-content;
+    max-width: 40%;
+    width: -moz-fit-content;
+}
+
+.Message.me .message_Box{
+	background: #ff00cc;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #333399, #ff00cc);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #333399, #ff00cc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+@media screen and (max-width: 600px) {
+  .Message .message_Box{
+		max-width: 60%;
+	}
+}

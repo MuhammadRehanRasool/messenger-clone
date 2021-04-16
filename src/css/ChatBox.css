@@ -1,0 +1,95 @@
+.ChatBox{
+	margin-top: 3px;
+	background-color: var(--Ccard);
+	padding: 2rem;
+	height: 100%;
+}
+
+.ChatBox .inputBox{
+	margin-top: 1rem;
+	background-color: var(--Cbackground);
+	border-radius: 10px;
+	padding: 0px 1rem;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ChatBox .inputBox input{
+	width: 100%;
+	height: 2.5rem;
+	outline: none;
+	border: none;
+	padding: 0;
+	margin: 0;
+	line-height: 0;
+	background-color: transparent;
+	color: var(--Cprimary)!important;
+}
+
+.ChatBox .messageBox{
+	overflow-y: scroll;
+	height: calc(100% - 7rem);
+}
+
+.ChatBox .sendIcon{
+	color: var(--Caccent);
+	cursor: pointer;
+}
+
+.Modal__Custom{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Modal__Custom > div{
+	background-color: var(--Cbackground);
+	border-radius: 12px;
+	color: var(--Cprimary);
+}
+
+.Modal__Custom > div:focus{
+	outline: none;
+}
+
+.Modal__Custom #simple-modal-title,
+.Modal__Custom #simple-modal-subtitle{
+	margin: 1rem 2rem;
+	font-weight: 400;
+}
+
+.Modal__Custom #simple-modal-title span,
+.Modal__Custom #simple-modal-subtitle a{
+	font-weight:500!important;
+	color: var(--Caccent);
+}
+
+.Modal__Custom #simple-modal-subtitle{
+	font-size: 1rem;
+	text-align: center;
+}
+
+.Modal__Custom #simple-modal-description{
+	margin: 1rem 2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid var(--Caccent);
+	border-radius: 12px;
+	background-color: var(--Ccard);
+	padding: .6rem;
+}
+
+.Modal__Custom #simple-modal-description input{
+	background-color: transparent;
+	outline: none;
+	border: none;
+	color: var(--Cprimary);
+	width: 100%;
+}
+
+.Modal__Custom #simple-modal-description .sendIcon{
+	cursor: pointer;
+	color: var(--Caccent);
+}

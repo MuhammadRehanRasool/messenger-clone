@@ -1,0 +1,41 @@
+.Navbar{
+	width: 100%;
+	padding: 1rem;
+	background-color: var(--Ccard);
+	color: var(--Cprimary);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.Navbar img, .Navbar h1{
+	margin: 2px 5px;
+}
+
+.Navbar .logo{
+	width: 2.2rem;
+	height: 2.2rem;
+}
+
+.Navbar .logo_written{
+	font-size: 1.5rem;
+	font-weight: 300;
+}
+
+#github_reference{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: fixed;
+    top: 1rem;
+    right: -8rem;    
+    transition: 900ms;
+    transform: rotate(45deg);
+    width: 20rem;
+    height: 3rem;
+    background: black;
+    cursor: pointer;
+}
+#github_icon{
+    font-size: 2.2rem;
+}
